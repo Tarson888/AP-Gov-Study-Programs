@@ -2,7 +2,7 @@ chap_vocab = {"nothing": "there",
               "hello": "goodbye"}
 import random, os
 def get_definition():
-    os.system('clear')
+    os.system('cls')
     glossary_dict = {
         "gender gap": "the regular pattern in which women are more likely to support Democratic candidates, in part because they tend to be less conservative than men and more likely to support spending on social services and to oppose higher levels of military spending",
         "Gibbons v. Ogden": "a landmark case decided in 1824 in which the Supreme Court interpreted very broadly the clause in Article I Section 8 of the Constitution and defined the power of Congress to regulate interstate commerce as encompassing virtually every form of commercial activity",
@@ -426,7 +426,7 @@ def get_definition():
         menu()
                  
 def quiz():
-    os.system('clear')
+    os.system('cls')
     word, definition = random.choice(list(chap_vocab.items()))
     print("Word:", word)
     ready = input("Press enter to see the definition.")
@@ -539,7 +539,7 @@ def chapthree():
 
 
 def menu():
-    os.system('clear')
+    os.system('cls')
     print("This is a program that defines AP Government vocab terms and provides digital flashcards for each chapter.")
     function = input("what are we doing today gang? (flashcards) or (defining vocab terms) ")
     if function == ("defining vocab terms"):
@@ -556,3 +556,4 @@ def menu():
             chapthree()
             quiz()
 menu()
+

@@ -1,8 +1,9 @@
 chap_vocab = {"nothing": "there",
               "hello": "goodbye"}
+current_chap = 8784373
 import random, os
 def get_definition():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear')
     glossary_dict = {
         "gender gap": "the regular pattern in which women are more likely to support Democratic candidates, in part because they tend to be less conservative than men and more likely to support spending on social services and to oppose higher levels of military spending",
         "Gibbons v. Ogden": "a landmark case decided in 1824 in which the Supreme Court interpreted very broadly the clause in Article I Section 8 of the Constitution and defined the power of Congress to regulate interstate commerce as encompassing virtually every form of commercial activity",
@@ -426,19 +427,35 @@ def get_definition():
         menu()
                  
 def quiz():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    global current_chap
+    os.system('clear')
     word, definition = random.choice(list(chap_vocab.items()))
     print("Word:", word)
     ready = input("Press enter to see the definition.")
     print("Definition:", definition)
-    continu = input("keep practicing? (say 'no' to go back to the menu, otherwise just press enter.) ")
-    if continu != "no":
+    continu = input("keep practicing? (say 'no' to go back to the menu, otherwise just press enter to continue or r to remove the flashcard from rotation) ")
+    if continu == "r":
+        del chap_vocab[word]
+        if len(chap_vocab) == 0:
+            print("You rotated through all the flashcards!")
+            if current_chap == 1:
+                chapone()
+            if current_chap == 2:
+                chaptwo()
+            if current_chap == 3:
+                chapthree()
+            quiz()
+        else:   
+            quiz()
+    elif continu != "no":
         quiz()
+        
     else:
         menu()
 
 def chapone():
-    global chap_vocab
+    global chap_vocab, current_chap
+    current_chap = 1
     chap_vocab = {
     "Single Issue Group": "Groups that have a narrow interest on which their members tend to take an uncompromising stance",
     "Linkage Institutions": "The political channels through which peoples concerns become political issues on the policy agenda. In the United States, linkage institutions include elections, political parties, interest groups, and the media",
@@ -464,7 +481,8 @@ def chapone():
     
     
 def chaptwo():
-    global chap_vocab
+    global chap_vocab, current_chap
+    current_chap = 2
     chap_vocab = {
     "Declaration of Independence": "The document approved by representatives of the American colonies in 1776 that stated their grievances against the British monarch and declared their independence.",
     "Natural rights": "Rights inherent in human beings, not dependent on governments, which include life, liberty, and property. The concept of natural rights was central to English philosopher John Locke's theories about government and was widely accepted among America's Founders.",
@@ -507,7 +525,8 @@ def chaptwo():
 }
 
 def chapthree():
-    global chap_vocab
+    global chap_vocab, current_chap
+    current_chap = 3
     chap_vocab = {
     "block grants": "national funding with minimal restrictions to the states on its use and is preferred by the states",
     "categorical grants": "Federal categorical grants distributed according to a formula specified in legislation or administrative regulations",
@@ -539,7 +558,7 @@ def chapthree():
 
 
 def menu():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear')
     print("This is a program that defines AP Government vocab terms and provides digital flashcards for each chapter.")
     function = input("what are we doing today gang? (flashcards) or (defining vocab terms) ")
     if function == ("defining vocab terms"):
@@ -556,5 +575,3 @@ def menu():
             chapthree()
             quiz()
 menu()
-
-

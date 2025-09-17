@@ -437,7 +437,8 @@ def quiz():
     if continu == "r":
         del chap_vocab[word]
         if len(chap_vocab) == 0:
-            done = input("You rotated through all the flashcards! (press enter to continue or say no to return to the menu")
+            os.system('cls' if os.name == 'nt' else 'clear')
+            done = input("You rotated through all the flashcards! (press enter to continue or say no to return to the menu)")
             if done == "no":
               menu()
             else:
@@ -578,5 +579,6 @@ def menu():
             chapthree()
             quiz()
 menu()
+
 
 

@@ -405,6 +405,57 @@ def get_definition():
         "Commerce clause": "gives the national government the power to regulate interstate commerce, but Supreme Court interpretations can influence the extent of this power",
         "Necessary and Proper clause / Elastic clause": "gives Congress the power to make laws related to carrying out its enumerated powers, but Supreme Court interpretations can influence the extent of these powers",
         "Supremacy Clause": "gives the national government and its laws general precedence over states' laws, but Supreme Court interpretations may affect when specific actions exceed this constitutional power"
+        "Party coalitions": "Groups of voters with common interests who consistently support a political party; these coalitions can shift over time based on party platforms, demographics, or key issues.",
+        "Party-line voting": "Voting for all the candidates from one political party on a ballot, typically based on party loyalty rather than individual candidate evaluation.",
+        "Midterm election": "An election that takes place in the middle of a president’s term; typically includes elections for all members of the House of Representatives and one-third of the Senate.",
+        "Political ideology": "A set of beliefs about the desired goals and outcomes of a political process, such as liberalism, conservatism, libertarianism, or socialism.",
+        "globalization": "The increasing interconnectedness of the world’s economies, political systems, cultures, and populations, driven by international trade, investment, and technology.",
+        "US political culture": "The set of shared beliefs, values, and norms that define the relationship between citizens and government in the United States, including democracy, individualism, equality of opportunity, and rule of law."
+        "26th Amendment": "lowered the voting age to 18",
+        "24th Amendment": "eliminated poll taxes, a structural barrier to voting",
+        "14th Amendment": "granted citizenship to all persons born or naturalized in the U.S., including formerly enslaved people",
+        "19th Amendment": "granted women the right to vote",
+        "17th Amendment": "changed the practice for electing Senators from a vote by state legislatures to a direct vote by the people",
+        "15th Amendment": "granted African American men the right to vote",
+        "Horserace journalism": "based more on popularity and factors other than candidate qualifications or platforms; driven by polling",
+        "Watchdog function of media": "a form of journalism in which reporters deeply investigate a topic of interest, especially government actions; serves a watchdog role",
+        "Gatekeeper function of media": "takes place when traditional media, new technologies, and social media influence how citizens acquire political information",
+        "Structural Barriers to voting": "such as Voter ID laws, variations in funding for polling places and workers, variations in types of voting allowed, polling hours, availability of absentee ballots, voting by mail, and early voting opportunities, ability to register in-person and/or online",
+        "Social media": "interactive technologies that facilitate the creation and sharing of information, ideas, interests, and expression through virtual networks (e.g., Facebook, Twitter, YouTube)",
+        "Traditional Media": "include print media, radio, television, cable/satellite, and billboards",
+        "Media Bias": "bias of journalists or producers in the selection and coverage of events; e.g., MSNBC leans liberal, FoxNews leans conservative",
+        "Investigative Journalism": "a form of journalism in which reporters deeply investigate a topic of interest, especially government actions; serves a watchdog role",
+        "Consumer-driver media outlet": "media whose content is influenced by the actions and needs of consumers",
+        "Agenda Setting": "takes place when traditional media, new technologies, and social media influence how citizens acquire political information",
+        "Linkage Institution": "channels that allow individuals to communicate their preferences to policymakers: political parties, interest groups, elections, media",
+        "Rational choice theory": "refers to individuals who base their decisions on what is perceived to be in their best interest",
+        "Retrospective voting": "refers to individuals who decide whether the party or candidate in power should be reelected based on the recent past",
+        "Prospective voting": "refers to individuals who vote based on predictions of how a party or candidate will perform in the future",
+        "Split-ticket voting": "refers to individuals who vote for all of the candidates from one political party on a ballot",
+        "Voter turnout": "differences in state-controlled elections (the hours polls are open, Voter ID laws, variations in funding for polling places and workers, variations in types of voting allowed, such as voting by mail, absentee voting, and early voting); variations in voter registration laws and procedures; election type (more turnout for presidential elections than midterm elections)",
+        "Voter choice": "factors influencing voter choice include: party identification and ideological orientation, candidate characteristics, contemporary political issues, religious beliefs or affiliation, age, gender, race and ethnicity, and other demographic characteristics",
+        "Party platform": "formal set of principal goals of a political party to appeal to the public / electorate",
+        "electorate": "the people eligible to vote in an election",
+        "Ideological/social movement": "a political party or organization focused on a particular political ideology or social movement agenda",
+        "Political efficacy": "the belief that an individual's participation in the political process will make a difference; used to predict the likelihood of whether an individual will vote",
+        "Political party": "functions and impact of political parties include: mobilization and education of voters, party platforms, candidate recruitment, campaign management, committee and party leadership systems in legislatures; influenced by: critical elections, campaign finance law, changes in communication and data management technology",
+        "Candidate-centered campaign": "where the public focus is on the characteristics of the candidate and not on the party",
+        "Critical Elections aka Political/Regional realignments": "set of sharp changes in party ideology, issues, party leadership, regional and demographic bases of power in political parties, and political system rules and structures",
+        "Winner-Take-All elections": "serve as a structural barrier to third-party and independent candidate success; winner-take-all voting advantages the two-party system in the U.S.",
+        "Proportional system (electoral)": "a type of electoral system in which subgroups of an electorate are reflected proportionally in a legislative body",
+        "Party convention": "a political convention where delegates of a political party come from across the nation to nominate candidates and decide on a party platform",
+        "Closed Primaries": "voting process where only voters registered in a given party can vote in their party's primary election",
+        "Open primaries": "voting process to elect candidates by allowing voters of any party affiliation to vote in one party's primary",
+        "General election": "a regular election where all registered voters may vote for candidates for political office",
+        "Popular vote": "an election where the candidate with a majority or plurality of all votes in the nation wins",
+        "Presidential election": "includes: incumbency advantage, open and closed primaries, caucuses, party conventions, general election, the Electoral College",
+        "Caucuses (non-Congressional)": "closed meetings of party members to select candidates or decide policy",
+        "Congressional election": "process and outcomes are affected by: incumbency advantage, open and closed primaries, caucuses, general elections",
+        "Modern Campaign": "characterized by: dependence on professional consultants, rising campaign costs, long election cycles, reliance on social media for communication and fundraising",
+        "Third party": "incorporation of third-party agendas into platforms of major political parties serves as a barrier to third-party and independent candidate success",
+        "Electoral college": "states can choose how they allocate their electors; most use a winner-take-all system",
+        "Incumbency advantage": "benefits current officeholders possess over challengers"
+
     }
 
 
@@ -560,7 +611,13 @@ def chapthree():
     "US v Lopez": "A Supreme Court case that limited Congress’s power under the Commerce Clause."
 }
 
-
+def unitfive():
+  global chap_vocab, current_chap
+    current_chap = 3
+    chap_vocab = {"mandates": "requirements by the national government of the states",
+    "Unfunded mandates": "Federal requirements that state or local governments must follow, but the national government provides little or no funding to cover the costs.",
+    "US v Lopez": "A Supreme Court case that limited Congress’s power under the Commerce Clause."
+}
 def menu():
     os.system('cls' if os.name == 'nt' else 'clear')
     print("This is a program that defines AP Government vocab terms and provides digital flashcards for each chapter.")
@@ -579,6 +636,7 @@ def menu():
             chapthree()
             quiz()
 menu()
+
 
 
 

@@ -404,13 +404,13 @@ def get_definition():
         "Fourteenth Amendment": "Due Process Clause and Equal Protection Clause as applied to the states",
         "Commerce clause": "gives the national government the power to regulate interstate commerce, but Supreme Court interpretations can influence the extent of this power",
         "Necessary and Proper clause / Elastic clause": "gives Congress the power to make laws related to carrying out its enumerated powers, but Supreme Court interpretations can influence the extent of these powers",
-        "Supremacy Clause": "gives the national government and its laws general precedence over states' laws, but Supreme Court interpretations may affect when specific actions exceed this constitutional power"
+        "Supremacy Clause": "gives the national government and its laws general precedence over states' laws, but Supreme Court interpretations may affect when specific actions exceed this constitutional power",
         "Party coalitions": "Groups of voters with common interests who consistently support a political party; these coalitions can shift over time based on party platforms, demographics, or key issues.",
         "Party-line voting": "Voting for all the candidates from one political party on a ballot, typically based on party loyalty rather than individual candidate evaluation.",
         "Midterm election": "An election that takes place in the middle of a president’s term; typically includes elections for all members of the House of Representatives and one-third of the Senate.",
         "Political ideology": "A set of beliefs about the desired goals and outcomes of a political process, such as liberalism, conservatism, libertarianism, or socialism.",
         "globalization": "The increasing interconnectedness of the world’s economies, political systems, cultures, and populations, driven by international trade, investment, and technology.",
-        "US political culture": "The set of shared beliefs, values, and norms that define the relationship between citizens and government in the United States, including democracy, individualism, equality of opportunity, and rule of law."
+        "US political culture": "The set of shared beliefs, values, and norms that define the relationship between citizens and government in the United States, including democracy, individualism, equality of opportunity, and rule of law.",
         "26th Amendment": "lowered the voting age to 18",
         "24th Amendment": "eliminated poll taxes, a structural barrier to voting",
         "14th Amendment": "granted citizenship to all persons born or naturalized in the U.S., including formerly enslaved people",
@@ -612,7 +612,7 @@ def chapthree():
 }
 
 def unitfive():
-  global chap_vocab, current_chap
+    global chap_vocab, current_chap
     current_chap = 3
     chap_vocab = {"mandates": "requirements by the national government of the states",
     "Unfunded mandates": "Federal requirements that state or local governments must follow, but the national government provides little or no funding to cover the costs.",
@@ -639,6 +639,7 @@ def menu():
             unitfive()
             quiz()
 menu()
+
 
 
 

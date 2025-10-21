@@ -625,7 +625,7 @@ def menu():
     if function == ("defining vocab terms"):
         get_definition()
     elif function == ("flashcards"):
-        unit = int(input("which chapter do you want to look at? (1, 2 or 3) "))
+        unit = int(input("which chapter do you want to look at? (1, 2, 3 or 5) "))
         if unit == 1:
             chapone()
             quiz()
@@ -635,7 +635,11 @@ def menu():
         if unit == 3:
             chapthree()
             quiz()
+        if unit == 5:
+            unitfive()
+            quiz()
 menu()
+
 
 
 
